@@ -2,16 +2,11 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dining-left.JPG-dfb99e502518b7bd5eaea2c833a6be46.stex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://majorelle/rooms/dining/scenes/left/dining-left.JPG"
-dest_files=[ "res://.import/dining-left.JPG-dfb99e502518b7bd5eaea2c833a6be46.stex" ]
-
 [params]
 
 compress/mode=0
