@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/intro-game/good_bamboo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/intro-game/sprites/RDC-B0010476-2020-SL.jpg" type="Texture" id=2]
+[ext_resource path="res://globals/background.gd" type="Script" id=3]
+[ext_resource path="res://globals/scene.gd" type="Script" id=4]
+[ext_resource path="res://scenes/intro-game/sprites/decor-foreground-left.png" type="Texture" id=5]
+[ext_resource path="res://scenes/intro-game/old_man.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/intro-game/bad_bamboo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/intro-game/sprites/decor-foreground-right.png" type="Texture" id=9]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 0.923004 ],
+"_edit_vertical_guides_": [ 1544.99 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bad_bamboo" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 1121.21, 884.903 )
+z_index = 884
+tooltip = "A bamboo that smells new"
+placeholders = {
+
+}
+
+[node name="good_bamboo" parent="." instance=ExtResource( 1 )]
+position = Vector2( 346.843, 598.215 )
+z_index = 897
+tooltip = "A simple bamboo"
+placeholders = {
+
+}
+
+[node name="old_man" parent="." instance=ExtResource( 6 )]
+position = Vector2( 82.8708, 1083.2 )
+scale = Vector2( 0.7, 0.7 )
+tooltip = "The Ghost of Villa Majorelle"
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="foreground left" type="Sprite" parent="."]
+visible = false
+position = Vector2( 170, 540 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="foreground right" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1642, 540 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="game" parent="." instance=ExtResource( 8 )]
