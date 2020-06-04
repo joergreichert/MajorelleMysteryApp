@@ -1,23 +1,23 @@
 [gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-foreground-right.png" type="Texture" id=2]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-middle-ground-3.png" type="Texture" id=3]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-middle-ground-1.png" type="Texture" id=4]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-foreground-left.png" type="Texture" id=5]
-[ext_resource path="res://scenes/second_scene/chameleon.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/second_scene/player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/living-room/sprites/decor2-foreground-right.png" type="Texture" id=2]
+[ext_resource path="res://scenes/living-room/sprites/decor2-middle-ground-3.png" type="Texture" id=3]
+[ext_resource path="res://scenes/living-room/sprites/decor2-middle-ground-1.png" type="Texture" id=4]
+[ext_resource path="res://scenes/living-room/sprites/decor2-foreground-left.png" type="Texture" id=5]
+[ext_resource path="res://scenes/living-room/chameleon.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/living-room/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/item.gd" type="Script" id=8]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-middle-ground-4.png" type="Texture" id=9]
+[ext_resource path="res://scenes/living-room/sprites/decor2-middle-ground-4.png" type="Texture" id=9]
 [ext_resource path="res://globals/background.gd" type="Script" id=10]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=11]
-[ext_resource path="res://scenes/second_scene/bamboo_god_2.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/second_scene/sprites/decor2-middle-ground-2.png" type="Texture" id=13]
+[ext_resource path="res://scenes/living-room/bamboo_god_2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/living-room/sprites/decor2-middle-ground-2.png" type="Texture" id=13]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/second_scene/sprites/1er-etage-B0010399-2020-SL.jpg" type="Texture" id=15]
-[ext_resource path="res://scenes/second_scene/good_bamboo_3.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/second_scene/bad_bamboo_2.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/second_scene/good_bamboo_2.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/living-room/sprites/1er-etage-B0010399-2020-SL.jpg" type="Texture" id=15]
+[ext_resource path="res://scenes/living-room/good_bamboo_3.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/living-room/bad_bamboo_2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/living-room/good_bamboo_2.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Image" id=1]
 data = {
@@ -173,9 +173,9 @@ placeholders = {
 }
 
 [node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 36.7695, 919.239 )
+position = Vector2( 116.408, 1093.58 )
 scale = Vector2( 0.05, 0.05 )
-z_index = 919
+z_index = 1093
 speed = 1000
 telekinetic = true
 placeholders = {

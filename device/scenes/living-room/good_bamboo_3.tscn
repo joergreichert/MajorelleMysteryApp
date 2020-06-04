@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/second_scene/sprites/click_mask/good-bamboo-3_click_mask.png" type="BitMap" id=2]
+[ext_resource path="res://scenes/living-room/sprites/click_mask/good-bamboo-3_click_mask.png" type="BitMap" id=2]
 [ext_resource path="res://audio/sounds/mini-bamboo01.wav" type="AudioStream" id=3]
-[ext_resource path="res://scenes/second_scene/sprites/good-bamboo-3.png" type="Texture" id=4]
+[ext_resource path="res://scenes/living-room/sprites/good-bamboo-3.png" type="Texture" id=4]
 
 
 [sub_resource type="Animation" id=1]
@@ -24,7 +24,7 @@ tracks/0/keys = {
 [node name="good_bamboo_3" type="Node2D"]
 script = ExtResource( 1 )
 tooltip = "A bamboo stick"
-events_path = "res://scenes/second_scene/good_bamboo_3.esc"
+events_path = "res://scenes/living-room/good_bamboo_3.esc"
 global_id = "good_bamboo_3"
 interact_angle = 90
 placeholders = {

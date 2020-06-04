@@ -127,7 +127,7 @@ func _process(time):
 			if last_dir != -1 && animation.get_current_animation() != animations.directions[last_dir]:
 				animation.play(animations.directions[last_dir])
 
-		#pose_scale = animations.directions[last_dir+1]
+		pose_scale = animations.directions[last_dir+1]
 
 		_update_terrain()
 

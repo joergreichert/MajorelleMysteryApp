@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/intro-game/sprites/ghost_mouth2.png" type="Texture" id=2]
 [ext_resource path="res://scenes/intro-game/sprites/ghost_mouth1.png" type="Texture" id=3]
-[ext_resource path="res://scenes/intro-game/sprites/click_mask/old_man_click_mask.png" type="BitMap" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "default"
@@ -72,7 +71,6 @@ margin_top = -120.0
 margin_right = 552.0
 margin_bottom = 840.0
 rect_scale = Vector2( 0.25, 0.25 )
-texture_click_mask = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

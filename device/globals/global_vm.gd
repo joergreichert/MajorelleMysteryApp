@@ -350,7 +350,7 @@ func register_object(name, val):
 		val.set_state("default")
 	if name in actives:
 		val.set_active(actives[name])
-	val.connect("tree_exited", self, "object_exit_scene", [name])
+	#val.connect("tree_exited", self, "object_exit_scene", [name])
 
 func get_registered_objects():
 	return objects
@@ -384,7 +384,7 @@ func check_event_queue(time):
 func _process(time):
 	check_event_queue(time)
 	run()
-	check_autosave()
+	#check_autosave()
 	update_camera(time)
 
 func run_top():
