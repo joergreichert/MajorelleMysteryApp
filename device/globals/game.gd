@@ -7,6 +7,7 @@ var action_menu = null
 var inventory
 export(String,FILE) var fallbacks_path = ""
 export var inventory_enabled = true setget set_inventory_enabled
+export var buttons_enabled = true setget set_buttons_enabled
 var fallbacks
 var check_joystick = false
 var joystick_mode = false
@@ -263,9 +264,12 @@ func set_inventory_enabled(p_enabled):
 	if !has_node("hud_layer/hud/inv_toggle"):
 		return
 	if inventory_enabled:
-		get_node("hud_layer/hud/inv_toggle").show()
+		get_node("hud_layer/hud/inventory").show()
 	else:
-		get_node("hud_layer/hud/inv_toggle").hide()
+		get_node("hud_layer/hud/inventory").hide()
+		
+func set_buttons_enabled(p_enabled):
+	buttons_enabled = p_enabled
 
 func set_camera_limits():
 	var cam_limit = camera_limits
@@ -309,20 +313,19 @@ func load_hud():
 	var hres = vm.res_cache.get_resource(vm.get_hud_scene())
 	get_node("hud_layer/hud").replace_by_instance(hres)
 	inventory = get_node("hud_layer/hud/inventory")
-
-	#if inventory_enabled:
-	#	get_node("hud_layer/hud/inv_toggle").show()
-	#else:
-	#	get_node("hud_layer/hud/inv_toggle").hide()
-
+	if inventory_enabled:
+		get_node("hud_layer/hud/inventory").show()
+	else:
+		get_node("hud_layer/hud/inventory").hide()
+	if buttons_enabled:
+		get_node("hud_layer/hud/verb_menu").show()
+	else:
+		get_node("hud_layer/hud/verb_menu").hide()
 
 func _ready():
 	add_to_group("game")
 	vm = get_tree().get_root().get_node("vm")
-	player = get_node("../player")
-	#player = get_node("player")
-	#player = get_node("/root/scenes/living-room/player")
-	#player = get_node("/root/globals/player")
+	#player = get_node("../player")
 	if has_node("action_menu"):
 		action_menu = get_node("action_menu")
 	if fallbacks_path != "":

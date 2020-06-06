@@ -1,0 +1,4 @@
+:load
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/scene.tscn
+cut_scene telon fade_in

@@ -23,7 +23,7 @@ func newgame_pressed():
 func start_new_game(p_confirm):
 	if !p_confirm:
 		return
-	vm.load_file("res://game/new_game.esc")
+	vm.load_file("res://game/trailer.esc")
 
 func continue_pressed():
 	pass

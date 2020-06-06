@@ -235,7 +235,6 @@ custom_colors/font_color = Color( 0.988235, 0.913725, 0.309804, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "es"
 align = 1
-[connection signal="pressed" from="new_game" to="." method="newgame_pressed"]
 [connection signal="pressed" from="en" to="." method="_on_language_selected" binds= [ "en" ]]
 [connection signal="pressed" from="fr" to="." method="_on_language_selected" binds= [ "fr" ]]
 [connection signal="pressed" from="es" to="." method="_on_language_selected" binds= [ "es" ]]
