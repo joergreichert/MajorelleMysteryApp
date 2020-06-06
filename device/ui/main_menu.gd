@@ -18,12 +18,8 @@ func button_clicked():
 
 func newgame_pressed():
 	button_clicked()
-	if root.get_current_scene() is preload("res://globals/scene.gd"):
-		confirm_popup = get_node("/root/main").load_menu("res://ui/confirm_popup.tscn")
-		confirm_popup.start("UI_NEW_GAME_CONFIRM",self,"start_new_game")
-	else:
-		start_new_game(true)
-		
+	start_new_game(true)
+
 func start_new_game(p_confirm):
 	if !p_confirm:
 		return
