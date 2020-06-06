@@ -201,6 +201,7 @@ func anim_finished(anim_name):
 		_queue_free()
 
 func _ready():
+	total_time = 0
 	vm = get_tree().get_root().get_node("vm")
 	speech_extension = ProjectSettings.get("application/speech_suffix")
 	add_to_group("events")
