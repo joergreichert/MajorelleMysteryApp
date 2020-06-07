@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/intro-game/good_bamboo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/intro-game/sprites/RDC-B0010476-2020-SL.jpg" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://scenes/intro-game/bad_bamboo.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/intro-game/sprites/decor-foreground-right.png" type="Texture" id=9]
+[ext_resource path="res://scenes/intro-game/top-right-pic.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/intro-game/sprites/click_mask/right-top-look-mask.png" type="Texture" id=11]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 4 )
@@ -70,3 +72,14 @@ __meta__ = {
 }
 
 [node name="game" parent="." instance=ExtResource( 8 )]
+
+[node name="top-right-pic" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1210.13, 287.903 )
+placeholders = {
+
+}
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 1266.12, 337.927 )
+scale = Vector2( 1.63514, 1.60182 )
+texture = ExtResource( 11 )
