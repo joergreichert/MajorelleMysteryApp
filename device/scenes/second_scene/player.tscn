@@ -62,6 +62,9 @@ animations = [ {
 
 [node name="player" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 speed = 500
 animations = ExtResource( 2 )
 placeholders = {
@@ -74,7 +77,7 @@ anims/standing = SubResource( 1 )
 anims/walking = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 170, 167 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( -1.81899e-12, 331 )
+scale = Vector2( 0.862121, 0.846386 )
 frames = SubResource( 3 )
 animation = "walk-right"

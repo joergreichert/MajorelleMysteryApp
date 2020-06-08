@@ -2,9 +2,8 @@
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/second_scene/sprites/click_mask/bad-bamboo-2_click_mask.png" type="BitMap" id=2]
-[ext_resource path="res://audio/sounds/mini-bamboo01.wav" type="AudioStream" id=3]
+[ext_resource path="res://scenes/intro-game/sounds/mini-bamboo01.wav" type="AudioStream" id=3]
 [ext_resource path="res://scenes/second_scene/sprites/bad-bamboo-2.png" type="Texture" id=4]
-
 
 [sub_resource type="Animation" id=1]
 resource_name = "pick_up"

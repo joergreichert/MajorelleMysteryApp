@@ -1,5 +1,5 @@
 :pick_up
-queue_resource res://scenes/living-room/scene.tscn
+queue_resource res://scenes/second_scene/scene.tscn
 say good_bamboo good_bamboo_pick_up_1:"I will take this recipe with me to the next room." default avatar_panda
 
 #> [!introduced]
@@ -15,7 +15,7 @@ set_global i/inv_good_bamboo true
 set_active good_bamboo false
 
 cut_scene telon fade_out
-change_scene res://scenes/living-room/scene.tscn
+change_scene res://scenes/second_scene/scene.tscn
 cut_scene telon fade_in
 
 :look
