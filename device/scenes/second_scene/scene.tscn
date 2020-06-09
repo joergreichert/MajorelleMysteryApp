@@ -168,8 +168,6 @@ position = Vector2( 157.222, 842.381 )
 scale = Vector2( 0.455979, 0.455979 )
 z_index = 842
 speed = 1000
-v_speed_damp = 1.0
-camera_limits = Rect2( 0, 0, 0, 0 )
 telekinetic = true
 placeholders = {
 
