@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/living-room/sprites/click_mask/cameleon_click_mask.png" type="BitMap" id=2]
 [ext_resource path="res://scenes/living-room/sprites/cameleon.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
@@ -52,7 +51,9 @@ margin_left = -68.0
 margin_top = -101.0
 margin_right = 68.0
 margin_bottom = 99.0
-texture_click_mask = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/disapear = SubResource( 1 )

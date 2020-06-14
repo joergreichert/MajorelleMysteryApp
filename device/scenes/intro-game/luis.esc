@@ -1,5 +1,18 @@
 :talk
 queue_resource res://scenes/luis/scene.tscn
-cut_scene telon fade_out
-change_scene res://scenes/luis/scene.tscn
-cut_scene telon fade_in
+> [ !luis_intro_talked ]
+  cut_scene telon fade_out
+  change_scene res://scenes/luis/scene.tscn
+  cut_scene telon fade_in
+  say luis luis_intro_01:"Luis 01" large
+  say arturo luis_intro_arturo_01:"Luis Arturo 01" large
+  set_global luis_intro_talked true
+  cut_scene telon fade_out
+  change_scene res://scenes/intro-game/scene.tscn
+  cut_scene telon fade_in
+  > [ jacques_intro_talked, luis_intro_talked, jane_intro_talked ]
+    cut_scene telon fade_out
+    change_scene res://scenes/dining-room/scene.tscn
+    cut_scene telon fade_in
+> [ luis_intro_talked ]
+  say arturo luis_intro_fallback:"Already talked to Luis" default

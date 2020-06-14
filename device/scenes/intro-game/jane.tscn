@@ -13,10 +13,12 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = 302.5
-margin_top = 193.451
-margin_right = 472.5
-margin_bottom = 478.451
+margin_left = -122.0
+margin_top = -105.0
+margin_right = 120.0
+margin_bottom = 108.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="_focus_out" type="Sprite" parent="."]
