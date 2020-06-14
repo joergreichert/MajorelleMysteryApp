@@ -4,8 +4,8 @@
 
 [node name="ghost-jacques" type="Node2D"]
 script = ExtResource( 2 )
-tooltip = "A bamboo stick"
-events_path = "res://scenes/dining-room/good_bamboo.esc"
+tooltip = "Jacques Majorelle"
+events_path = "res://scenes/intro-game/jacques.esc"
 global_id = "ghost-jacques"
 interact_angle = 90
 placeholders = {
