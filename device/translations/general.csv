@@ -4,7 +4,7 @@ use.combine_id,Use %1 with %2,Utiliser %1 avec %2
 look.id,Look at,Regarder
 pick_up.id,Pick up,Ramasser
 talk.id,Talk to,Parler à
-UI_CONTINUE,Continue,Continuer
+UI_TESTING,Test mode,Mode du test
 UI_NEW_GAME,New Game,Nouveau jeu
 UI_QUIT,Quit,Quitter
 UI_YES,Yes,Oui
