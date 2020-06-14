@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/second_scene/sprites/click_mask/cameleon_click_mask.png" type="BitMap" id=2]
-[ext_resource path="res://scenes/second_scene/sprites/cameleon.png" type="Texture" id=3]
+[ext_resource path="res://scenes/living-room/sprites/click_mask/cameleon_click_mask.png" type="BitMap" id=2]
+[ext_resource path="res://scenes/living-room/sprites/cameleon.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "disapear"
@@ -39,7 +39,7 @@ tracks/0/keys = {
 z_index = 800
 script = ExtResource( 1 )
 tooltip = "A little cameleon"
-events_path = "res://scenes/second_scene/chameleon.esc"
+events_path = "res://scenes/living-room/chameleon.esc"
 global_id = "chameleon"
 interact_angle = 90
 placeholders = {

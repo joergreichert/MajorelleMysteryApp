@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="ghost-jacques" type="Node2D"]
+script = ExtResource( 2 )
+tooltip = "A bamboo stick"
+events_path = "res://scenes/dining-room/good_bamboo.esc"
+global_id = "ghost-jacques"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = 499.352
+margin_top = 457.971
+margin_right = 669.352
+margin_bottom = 742.971
+__meta__ = {
+"_edit_use_anchors_": false
+}

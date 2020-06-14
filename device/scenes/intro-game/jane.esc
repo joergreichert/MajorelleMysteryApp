@@ -1,0 +1,5 @@
+:talk
+queue_resource res://scenes/jane/scene.tscn
+cut_scene telon fade_out
+change_scene res://scenes/jane/scene.tscn
+cut_scene telon fade_in

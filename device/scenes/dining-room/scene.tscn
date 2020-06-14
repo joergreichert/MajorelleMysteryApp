@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/dining-room/menu_card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/dining-room/sprites/cheminee_et_table.png" type="Texture" id=2]
+[ext_resource path="res://globals/background.gd" type="Script" id=3]
+[ext_resource path="res://globals/scene.gd" type="Script" id=4]
+[ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 0.923004 ],
+"_edit_vertical_guides_": [ 1544.99 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="menu_card" parent="." instance=ExtResource( 1 )]
+position = Vector2( 830.656, 805.583 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 897
+placeholders = {
+
+}
+
+[node name="arturo" parent="." instance=ExtResource( 6 )]
+position = Vector2( 82.8708, 1083.2 )
+scale = Vector2( 0.7, 0.7 )
+tooltip = "The journalist"
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="game" parent="." instance=ExtResource( 8 )]

@@ -1,0 +1,5 @@
+:load
+cut_scene telon fade_out
+change_scene res://scenes/intro-game/scene.tscn
+cut_scene telon fade_in
+say arturo dining_room_01:"Dining Room 01" default avatar_arturo

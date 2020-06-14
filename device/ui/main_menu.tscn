@@ -2,12 +2,16 @@
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://ui/Bildschirmfoto 2020-06-02 um 11.53.51.png" type="Texture" id=2]
-[ext_resource path="res://scenes/intro-game/sprites/bg-button_grey.png" type="Texture" id=3]
-[ext_resource path="res://scenes/intro-game/sprites/round_grey.png" type="Texture" id=4]
+[ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
+[ext_resource path="res://globals/sprites/round_grey.png" type="Texture" id=4]
 [ext_resource path="res://ui/fonts/Big_Bottom_Cartoon_AD_16.font" type="BitmapFont" id=5]
-[ext_resource path="res://scenes/intro-game/sprites/lgge-button.png" type="Texture" id=6]
-[ext_resource path="res://scenes/intro-game/sprites/lgge-button-pressed.png" type="Texture" id=7]
+[ext_resource path="res://globals/sprites/lgge-button.png" type="Texture" id=6]
+[ext_resource path="res://globals/sprites/lgge-button-pressed.png" type="Texture" id=7]
 [ext_resource path="res://ui/fonts/Big_Bottom_Cartoon_AD.ttf" type="DynamicFontData" id=8]
+
+
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 30

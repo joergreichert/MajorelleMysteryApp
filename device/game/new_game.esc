@@ -2,4 +2,3 @@
 cut_scene telon fade_out
 change_scene res://scenes/intro-game/scene.tscn
 cut_scene telon fade_in
-say old_man game_load_1:"Boo, I'm the ghost of Villa Majorelle, welcome to the game!" default avatar_old_man
