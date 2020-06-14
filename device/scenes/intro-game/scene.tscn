@@ -30,22 +30,18 @@ __meta__ = {
 
 [node name="ghost-luis" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1226.23, 516.738 )
-tooltip = "Luis Majorelle"
 placeholders = {
 
 }
 
 [node name="ghost-jacques" parent="." instance=ExtResource( 6 )]
 position = Vector2( 620.108, 508.807 )
-tooltip = "Jacques Majorelle"
-events_path = "res://scenes/intro-game/luis.esc"
 placeholders = {
 
 }
 
 [node name="ghost-jane" parent="." instance=ExtResource( 5 )]
 position = Vector2( 420.362, 469.575 )
-tooltip = "Jane Majorelle"
 placeholders = {
 
 }

@@ -10,11 +10,12 @@
  cut_scene telon fade_in
  say jacques jacques_intro_01:"Jacques 01" large
  say arturo jacques_intro_arturo_01:"Jacques Arturo 01" large
+ say arturo jacques_intro_arturo_02:"Jacques Arturo 02" large
  set_global jacques_intro_talked true
  cut_scene telon fade_out
  change_scene res://scenes/intro-game/scene.tscn
  cut_scene telon fade_in
- > [jacques_intro_talked,jacques_intro_talked,jane_intro_talked]
+ > [luis_intro_talked,jacques_intro_talked,jane_intro_talked]
   cut_scene telon fade_out
   change_scene res://scenes/dining-room/scene.tscn
   cut_scene telon fade_in

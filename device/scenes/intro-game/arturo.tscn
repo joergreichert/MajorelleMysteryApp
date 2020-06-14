@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://globals/sprites/ghost_mouth2.png" type="Texture" id=2]
-[ext_resource path="res://globals/sprites/ghost_mouth1.png" type="Texture" id=3]
+[ext_resource path="res://actors/arturo/sprites/Arturo.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "default"
@@ -49,13 +48,13 @@ tracks/0/keys = {
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[node name="old_man" type="Node2D"]
+[node name="arturo" type="Node2D"]
 script = ExtResource( 1 )
 tooltip = "Arturo, the journalist"
 events_path = "res://scenes/intro-game/arturo.esc"

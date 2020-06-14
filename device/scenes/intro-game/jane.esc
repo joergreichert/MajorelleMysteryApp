@@ -14,7 +14,7 @@
  cut_scene telon fade_out
  change_scene res://scenes/intro-game/scene.tscn
  cut_scene telon fade_in
- > [jane_intro_talked,jane_intro_talked,jane_intro_talked]
+ > [luis_intro_talked,jacques_intro_talked,jane_intro_talked]
   cut_scene telon fade_out
   change_scene res://scenes/dining-room/scene.tscn
   cut_scene telon fade_in
