@@ -6,6 +6,9 @@
 [ext_resource path="res://globals/sprites/yes-no-button.png" type="Texture" id=4]
 [ext_resource path="res://globals/sprites/yes-no-button-pressed.png" type="Texture" id=5]
 
+
+
+
 [sub_resource type="DynamicFont" id=1]
 size = 32
 font_data = ExtResource( 3 )
