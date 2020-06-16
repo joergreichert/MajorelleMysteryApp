@@ -46,6 +46,8 @@ use_custom_z = true
 [node name="game" parent="." instance=ExtResource( 8 )]
 
 [node name="top-right-pic" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1223.98, 299.814 )
+tooltip = "Top right pic"
 placeholders = {
 
 }

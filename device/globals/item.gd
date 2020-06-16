@@ -366,3 +366,7 @@ func _ready():
 
 	call_deferred("_update_terrain")
 
+
+
+func _on_button_pressed():
+	pass # Replace with function body.
