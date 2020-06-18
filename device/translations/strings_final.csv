@@ -1,17 +1,17 @@
 ,en,fr,de
-can_look_1,A can,Une cannette, Eine Dose
-box_look_1,An old newspaper,Un vieux journal, Eine alte Zeitung
-box_look_2,It's a box,C'est une boîte, Es ist eine Schachtel
+can_look_1,a can,une cannette, eine Dose
+box_look_1,an old newspaper,un vieux journal, eine alte Zeitung
+box_look_2,It's a box!,C'est une boîte!, Das ist eine Schachtel!
 box_pick_up_3,It's too heavy!,C'est bien trop lourd!, Das ist zu schwer!
-box_open_4,It's already open,C'est déjà ouvert, Es ist schon offen
-box_open_5,There was a newspaper inside it,Il y a un journal dedans, 
-chainsaw_look_1,A chainsaw,Une tronçonneuse, Eine Kettensäge
-ice_cream_look_1,A strawberry ice cream cone,Un cône de glace à la fraise, Ein Erdbeereis
+box_open_4,It's already open.,C'est déjà ouvert., Es ist schon offen.
+box_open_5,There was a newspaper inside it.,Il y a un journal dedans., 
+chainsaw_look_1,a chainsaw,une tronçonneuse, eine Kettensäge
+ice_cream_look_1,a strawberry ice cream cone,un cône de glace à la fraise, ein Erdbeereis
 ice_cream_look_2,res://scenes/test/dog_splash_theme.ogg,res://scenes/test/dog_splash_theme.ogg
 fallbacks_use_1,use fallback!,utiliser!, benutzen!
-fallbacks_use_2,I can't do that,Je ne peux pas faire ça, Ich kann das nicht machen
-fallbacks_pick_up_3,pick_up fallback!,Prendre!, Aufheben
-fallbacks_pick_up_4,That's not a good idea,Ce n'est pas une bonne idée, Das ist keine gute Idee
+fallbacks_use_2,I can't do that.,Je ne peux pas faire ça., Ich kann das nicht machen.
+fallbacks_pick_up_3,pick_up fallback!,Prendre!, Aufheben!
+fallbacks_pick_up_4,That's not a good idea.,Ce n'est pas une bonne idée., Das ist keine gute Idee.
 game_load_1,"Boo! Hello, I'm the ghost of Villa Majorelle, welcome to the game!","Bonjour, je suis le vieux panda, bienvenue dans ce jeu !", "Buh! Hallo, ich bin der Geist der Villa Majorelle, willkommen im Spiel!"
 trailer_01,"Hello. My name is Arturo, I am a journalist and detective. My specialities are ghosts and thieves.","","Hallo. Mein Name ist Arturo. Ich bin ein Journalist und Detektiv. Mein Spezialgebiet sind Geister und Diebe."
 trailer_02,"Every month I write in the spooky column 'The Ghosts are in', but the story I am about to tell you is for a different kind of readers indeed – the kind who want to take part in history.","","Ich schreibe jeden Monat in der Gruselkolumne 'The Ghosts are in', aber die Geschichte, die ich jetzt erzählen werde, ist für andere Leser – für die die Teil historischer Ereignisse sein wollen."
