@@ -1,6 +1,6 @@
 :pick_up
 queue_resource res://scenes/living-room/scene.tscn
-say good_bamboo good_bamboo_pick_up_1:"I will take this recipe with me to the next room." default avatar_panda
+say good_bamboo good_bamboo_pick_up_1:"I will take this recipe with me to the next room." default arturo
 
 #> [!introduced]
 #	say good_bamboo bamboo_no_pick_up:"I should talk to the master first." default avatar_panda
