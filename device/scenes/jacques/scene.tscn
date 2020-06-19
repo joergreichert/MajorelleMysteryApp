@@ -32,12 +32,13 @@ buttons_enabled = false
 
 [node name="arturo" parent="." instance=ExtResource( 4 )]
 position = Vector2( 428.883, 651.734 )
+scale = Vector2( 0.7, 0.7 )
 placeholders = {
 
 }
 
 [node name="jacques" parent="." instance=ExtResource( 5 )]
-position = Vector2( 433.016, 626.866 )
+position = Vector2( 332.016, 638.866 )
 placeholders = {
 
 }

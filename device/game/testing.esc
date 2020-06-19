@@ -1,7 +1,4 @@
 :load
-set_global jacques_intro_talked false
-set_global luis_intro_talked false
-set_global jane_intro_talked false
 cut_scene telon fade_out
-change_scene res://scenes/intro-game/scene.tscn
+change_scene res://scenes/dining-room/scene.tscn
 cut_scene telon fade_in

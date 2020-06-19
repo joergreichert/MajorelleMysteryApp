@@ -23,7 +23,7 @@ var speech_language = "en"
 var speech_extension = ".ogg"
 var finish_with_speech = false
 
-var speech_locales = ["en", "de"]
+var speech_locales = ["en", "fr", "de"]
 var default_speech_language = "en"
 
 export var fixed_pos = false
