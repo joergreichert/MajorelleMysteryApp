@@ -108,7 +108,7 @@ pointing/emulate_touch_from_mouse=true
 
 [locale]
 
-translations=PoolStringArray( "res://translations/general.en.translation", "res://translations/general.fr.translation", "res://translations/strings_final.en.translation", "res://translations/strings_final.fr.translation" )
+translations=PoolStringArray( "res://translations/general.en.translation", "res://translations/general.fr.translation", "res://translations/strings_final.en.translation", "res://translations/strings_final.fr.translation", "res://translations/general.de.translation", "res://translations/strings_final.de.translation" )
 
 [platform]
 
