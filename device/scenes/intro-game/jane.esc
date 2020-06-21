@@ -9,6 +9,7 @@
  change_scene res://scenes/jane/scene.tscn
  cut_scene telon fade_in
  say jane jane_intro_01:"Jane 01" large avatar_jane
+ say jane jane_intro_02:"Jane 02" large avatar_jane
  say arturo jane_intro_arturo_01:"Jane Arturo 01" large avatar_arturo
  set_global jane_intro_talked true
  cut_scene telon fade_out
