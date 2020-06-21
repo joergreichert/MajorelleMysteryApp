@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://globals/action_menu.gd" type="Script" id=1]
-[ext_resource path="res://scenes/intro-game/sprites/use-action.png" type="Texture" id=2]
-[ext_resource path="res://scenes/intro-game/sprites/use-action-hover.png" type="Texture" id=3]
-[ext_resource path="res://scenes/intro-game/sprites/speak-action.png" type="Texture" id=4]
-[ext_resource path="res://scenes/intro-game/sprites/speak-action-hover.png" type="Texture" id=5]
-[ext_resource path="res://scenes/intro-game/sprites/look-action.png" type="Texture" id=6]
-[ext_resource path="res://scenes/intro-game/sprites/look-action-hover.png" type="Texture" id=7]
+[ext_resource path="res://globals/sprites/use-action.png" type="Texture" id=2]
+[ext_resource path="res://globals/sprites/use-action-hover.png" type="Texture" id=3]
+[ext_resource path="res://globals/sprites/speak-action.png" type="Texture" id=4]
+[ext_resource path="res://globals/sprites/speak-action-hover.png" type="Texture" id=5]
+[ext_resource path="res://globals/sprites/look-action.png" type="Texture" id=6]
+[ext_resource path="res://globals/sprites/look-action-hover.png" type="Texture" id=7]
 
 [node name="action_menu" type="Node2D"]
 script = ExtResource( 1 )

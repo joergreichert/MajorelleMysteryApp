@@ -57,8 +57,8 @@ animations = [ {
 
 [node name="arturo" type="Node2D"]
 script = ExtResource( 1 )
-tooltip = "Arturo"
-events_path = "res://scenes/intro-game/old_man.esc"
+tooltip = "Arturo, the journalist"
+events_path = "res://scenes/intro-game/arturo.esc"
 global_id = "arturo"
 interact_angle = 90
 placeholders = {

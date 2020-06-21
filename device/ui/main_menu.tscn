@@ -1,10 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
-[ext_resource path="res://ui/Bildschirmfoto 2020-06-02 um 11.53.51.png" type="Texture" id=2]
+[ext_resource path="res://ui/villa.png" type="Texture" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
 [ext_resource path="res://globals/sprites/round_grey.png" type="Texture" id=4]
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 60

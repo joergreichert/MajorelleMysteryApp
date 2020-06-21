@@ -1,17 +1,16 @@
 :talk
 
 > [jacques_intro_talked]
- say arturo jacques_intro_fallback:"Already talked to Jacques" default
+ say arturo jacques_intro_fallback:"Already talked to Jacques" default avatar_arturo
 
 > [!jacques_intro_talked]
  queue_resource res://scenes/jacques/scene.tscn
  cut_scene telon fade_out
  change_scene res://scenes/jacques/scene.tscn
  cut_scene telon fade_in
- say jacques jacques_intro_01:"Jacques 01" large
- say jacques jacques_intro_02:"Jacques 02" large
- say arturo jacques_intro_arturo_01:"Jacques Arturo 01" large
- say arturo jacques_intro_arturo_02:"Jacques Arturo 02" large
+ say jacques jacques_intro_01:"Jacques 01" large avatar_jacques
+ say jacques jacques_intro_02:"Jacques 02" large avatar_jacques
+ say arturo jacques_intro_arturo_01:"Jacques Arturo 01" large avatar_arturo
  set_global jacques_intro_talked true
  cut_scene telon fade_out
  change_scene res://scenes/intro-game/scene.tscn
@@ -20,3 +19,4 @@
   cut_scene telon fade_out
   change_scene res://scenes/dining-room/scene.tscn
   cut_scene telon fade_in
+  say arturo dining_room_01:"Dining Room 01" default avatar_arturo

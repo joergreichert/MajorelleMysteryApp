@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://globals/sprites/dialogue.png" type="Texture" id=1]
+[ext_resource path="res://globals/sprites/speech_bubble.png" type="Texture" id=1]
 [ext_resource path="res://scenes/00_trailer/scene.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/00_trailer/arturo.tscn" type="PackedScene" id=4]
@@ -9,28 +9,17 @@
 [node name="scene" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="background" type="TextureRect" parent="."]
-margin_left = 219.698
-margin_top = 399.45
-margin_right = 1405.7
-margin_bottom = 898.45
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 779.276, 754.417 )
+scale = Vector2( 0.27603, 0.489044 )
 texture = ExtResource( 1 )
-expand = true
-stretch_mode = 4
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
 
 [node name="game" parent="." instance=ExtResource( 3 )]
 inventory_enabled = false
 buttons_enabled = false
 
 [node name="luis" parent="." instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 326.63, 655.082 )
 scale = Vector2( 2.5, 2.5 )
 placeholders = {
@@ -38,6 +27,7 @@ placeholders = {
 }
 
 [node name="arturo" parent="." instance=ExtResource( 4 )]
+visible = false
 position = Vector2( 428.883, 651.734 )
 scale = Vector2( 0.7, 0.7 )
 z_index = 1
