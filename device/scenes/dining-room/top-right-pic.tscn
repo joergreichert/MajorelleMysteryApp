@@ -24,6 +24,6 @@ __meta__ = {
 
 [node name="_focus_out" type="Sprite" parent="."]
 visible = false
-position = Vector2( 35.545, 27.8178 )
-scale = Vector2( 1.72541, 1.56198 )
+position = Vector2( 66.0205, 47.6931 )
+scale = Vector2( 2.34736, 1.9635 )
 texture = ExtResource( 1 )

@@ -26,7 +26,7 @@ __meta__ = {
 }
 tooltip = "A menu card"
 events_path = "res://scenes/dining-room/menu_card.esc"
-global_id = "good_bamboo"
+global_id = "menu_card"
 interact_angle = 90
 placeholders = {
 
