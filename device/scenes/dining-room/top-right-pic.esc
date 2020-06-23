@@ -3,3 +3,11 @@ queue_resource res://scenes/slide-show/scene.tscn
 cut_scene telon fade_out
 change_scene res://scenes/slide-show/scene.tscn
 cut_scene telon fade_in
+
+:use inv_menu_card
+queue_resource res://scenes/menu-riddle/scene.tscn
+say arturo "So let's have a look how this could help me!" default avatar_arturo
+cut_scene telon fade_out
+change_scene res://scenes/menu-riddle/scene.tscn
+cut_scene telon fade_in
+
