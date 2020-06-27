@@ -1,5 +1,8 @@
 :look
 queue_resource res://scenes/slide-show/scene.tscn
+teleport_pos arturo 1200 700
+set_state arturo look_up_right
+
 cut_scene telon fade_out
 change_scene res://scenes/slide-show/scene.tscn
 cut_scene telon fade_in
