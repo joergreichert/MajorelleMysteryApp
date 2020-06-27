@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://globals/sprites/arrow.png" type="Texture" id=1]
 [ext_resource path="res://globals/sprites/arrow-pressed.png" type="Texture" id=2]
@@ -6,9 +6,8 @@
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://globals/sprites/arrow-left-pressed.png" type="Texture" id=5]
 [ext_resource path="res://globals/sprites/arrow-left.png" type="Texture" id=6]
-[ext_resource path="res://globals/sprites/arrow-down-pressed.png" type="Texture" id=7]
+[ext_resource path="res://scenes/menu-riddle/exit.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
-[ext_resource path="res://globals/sprites/arrow-down.png" type="Texture" id=9]
 [ext_resource path="res://scenes/menu/sprites/menu01.png" type="Texture" id=10]
 [ext_resource path="res://scenes/menu/sprites/menu01_text.png" type="Texture" id=14]
 [ext_resource path="res://scenes/menu/sprites/menu02_text.png" type="Texture" id=15]
@@ -56,7 +55,7 @@ func _on_exit_pressed():
 	vm.load_file(\"res://scenes/slide-show/exit.esc\")
 
 func checkValues():
-	if aNumber == 10 and bNumber == 2 and cNumber == 3 and dNumber == 1: 
+	if aNumber == 9 and bNumber == 2 and cNumber == 1 and dNumber == 0: 
 		get_node(\"menu01/status1\").show()
 		get_node(\"menu02/status2\").show()
 	else:
@@ -122,7 +121,6 @@ margin_left = -276.52
 margin_top = 70.3467
 margin_right = -202.52
 margin_bottom = 102.347
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -132,7 +130,6 @@ margin_left = -198.996
 margin_top = 69.7976
 margin_right = -124.996
 margin_bottom = 101.798
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -142,7 +139,6 @@ margin_left = -119.662
 margin_top = 69.7975
 margin_right = -45.6623
 margin_bottom = 101.798
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -187,7 +183,6 @@ margin_left = -198.876
 margin_top = 13.7805
 margin_right = -124.876
 margin_bottom = 45.7805
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -197,7 +192,6 @@ margin_left = -309.943
 margin_top = 52.9184
 margin_right = -235.943
 margin_bottom = 84.9184
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -207,7 +201,6 @@ margin_left = -280.325
 margin_top = 153.408
 margin_right = -206.325
 margin_bottom = 185.408
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -217,7 +210,6 @@ margin_left = -197.818
 margin_top = 152.35
 margin_right = -123.818
 margin_bottom = 184.35
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -227,7 +219,6 @@ margin_left = -230.609
 margin_top = 53.9762
 margin_right = -156.609
 margin_bottom = 85.9762
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -256,15 +247,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="exit" type="TextureButton" parent="."]
-margin_left = 71.0898
-margin_top = 936.532
-margin_right = 239.09
-margin_bottom = 1084.53
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
+[node name="exit" parent="." instance=ExtResource( 7 )]
+position = Vector2( 143.841, 1020.59 )
+tooltip = "Exit the menu riddle"
+events_path = "res://scenes/menu-riddle/exit.esc"
+global_id = "exit_menu_riddle"
+placeholders = {
+
 }
 [connection signal="value_changed" from="menu01/a1Select" to="." method="_on_aSelect_value_changed"]
 [connection signal="value_changed" from="menu01/b1Select" to="." method="_on_bSelect_value_changed"]
@@ -276,4 +265,3 @@ __meta__ = {
 [connection signal="value_changed" from="menu02/c2Select" to="." method="_on_cSelect_value_changed"]
 [connection signal="value_changed" from="menu02/d2Select" to="." method="_on_dSelect_value_changed"]
 [connection signal="pressed" from="menu02/left" to="." method="_on_left_pressed"]
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

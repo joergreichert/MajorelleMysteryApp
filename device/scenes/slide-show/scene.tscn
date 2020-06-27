@@ -3,11 +3,11 @@
 [ext_resource path="res://globals/sprites/arrow.png" type="Texture" id=1]
 [ext_resource path="res://globals/sprites/arrow-pressed.png" type="Texture" id=2]
 [ext_resource path="res://scenes/slide-show/sprites/RDC-B0009119-2019-SL.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/slide-show/painting.tscn" type="PackedScene" id=4]
 [ext_resource path="res://globals/sprites/arrow-left-pressed.png" type="Texture" id=5]
 [ext_resource path="res://globals/sprites/arrow-left.png" type="Texture" id=6]
-[ext_resource path="res://globals/sprites/arrow-down-pressed.png" type="Texture" id=7]
+[ext_resource path="res://scenes/slide-show/exit.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
-[ext_resource path="res://globals/sprites/arrow-down.png" type="Texture" id=9]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -27,24 +27,36 @@ var currentIndex = 0
 
 func _ready():
 	get_node(\"/root/main\").call_deferred(\"set_current_scene\", self)
-	vm = get_tree().get_root().get_node(\"vm\")	
-	pass
+	vm = get_tree().get_root().get_node(\"vm\")
+	var decorativePaintingIndex = vm.get_global(\"decorative_painting_index\")
+	printt(\"decorativePaintingIndex \", decorativePaintingIndex)
+	if decorativePaintingIndex != null and int(decorativePaintingIndex) > 0: 
+		currentIndex = decorativePaintingIndex
+	handleImageShow()
+
+func handleRabbitPainting():
+	if currentIndex == 4:
+		get_node(\"painting\").show()
+	else:	
+		get_node(\"painting\").hide()
+
+func handleImageShow():
+	var image_tex = load(\"res://scenes/slide-show/sprites/\" + paintings[currentIndex]) 
+	get_node(\"decorative-painting\").texture = image_tex
+	handleRabbitPainting()
+	vm.set_global(\"decorative_painting_index\", currentIndex)	
 
 func _on_left_pressed():
 	currentIndex = currentIndex - 1 
 	if currentIndex < 0:
 		currentIndex = len(paintings) - 1
-	var image_tex = load(\"res://scenes/slide-show/sprites/\" + paintings[currentIndex]) 
-	get_node(\"decorative-painting\").texture = image_tex
-
+	handleImageShow()
 
 func _on_right_pressed():
 	currentIndex = currentIndex + 1 
 	if currentIndex >= len(paintings):
 		currentIndex = 0
-	var image_tex = load(\"res://scenes/slide-show/sprites/\" + paintings[currentIndex]) 
-	get_node(\"decorative-painting\").texture = image_tex
-
+	handleImageShow()
 
 func _on_exit_pressed():
 	vm.load_file(\"res://scenes/slide-show/exit.esc\")
@@ -94,16 +106,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="exit" type="TextureButton" parent="."]
-margin_left = 71.0898
-margin_top = 936.532
-margin_right = 239.09
-margin_bottom = 1084.53
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
+[node name="painting" parent="." instance=ExtResource( 4 )]
+position = Vector2( 363.41, 265.191 )
+scale = Vector2( 0.7, 0.55 )
+placeholders = {
+
+}
+
+[node name="exit" parent="." instance=ExtResource( 7 )]
+position = Vector2( 143.141, 1020.16 )
+tooltip = "Exit the decorative paintings"
+events_path = "res://scenes/slide-show/exit.esc"
+global_id = "exit_decorative_paintings"
+placeholders = {
+
 }
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="left" to="." method="_on_left_pressed"]
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

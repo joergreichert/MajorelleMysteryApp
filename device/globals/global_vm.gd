@@ -321,7 +321,9 @@ func sched_event(time, obj, event):
 	event_queue.push_back([time, obj, event])
 
 func get_global(name):
-	return (name in globals) && globals[name]
+	if (name in globals):
+		return globals[name]
+	return false
 
 func set_global(name, val):
 	globals[name] = val
