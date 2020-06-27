@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scenes/dining-room/menu_card.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/dining-room/sprites/cheminee.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/dining-room-left/right-nav.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/dining-room-left/sprites/table.png" type="Texture" id=2]
 [ext_resource path="res://globals/background.gd" type="Script" id=3]
-[ext_resource path="res://scenes/dining-room/left-nav.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/dining-room/top-right-pic.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/dining-room-left/buffet.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 
@@ -30,14 +29,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="menu_card" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1353.01, 635.064 )
-scale = Vector2( 0.5, 0.5 )
-z_index = 897
-placeholders = {
-
-}
-
 [node name="arturo" parent="." instance=ExtResource( 6 )]
 position = Vector2( 208.062, 880.304 )
 scale = Vector2( 0.6, 0.6 )
@@ -49,16 +40,15 @@ use_custom_z = true
 
 [node name="game" parent="." instance=ExtResource( 8 )]
 
-[node name="top-right-pic" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1253.45, 270.348 )
-tooltip = "Top right pic"
+[node name="right-nav" parent="." instance=ExtResource( 1 )]
+position = Vector2( -35.875, 210.466 )
 placeholders = {
 
 }
 
-[node name="left-nav" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2.39172, 404.19 )
-events_path = "res://scenes/dining-room/left-nav.esc"
+[node name="buffet" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1145.6, 461.59 )
+scale = Vector2( 2, 3 )
 placeholders = {
 
 }

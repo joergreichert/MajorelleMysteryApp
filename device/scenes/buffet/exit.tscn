@@ -24,7 +24,7 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 tooltip = "Exit the rabbit poem"
-events_path = "res://scenes/rabbits/rabbit-poem.esc"
+events_path = "res://scenes/buffet/exit.esc"
 global_id = "exit_rabbit_poem"
 interact_angle = 90
 placeholders = {
