@@ -23,9 +23,9 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
-tooltip = "Exit the rabbit poem"
+tooltip = "Exit the buffet"
 events_path = "res://scenes/buffet/exit.esc"
-global_id = "exit_rabbit_poem"
+global_id = "exit_buffet"
 interact_angle = 90
 placeholders = {
 
