@@ -57,7 +57,7 @@ placeholders = {
 }
 
 [node name="left-nav" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2.39172, 404.19 )
+position = Vector2( 78.9247, 339.615 )
 events_path = "res://scenes/dining-room/left-nav.esc"
 placeholders = {
 

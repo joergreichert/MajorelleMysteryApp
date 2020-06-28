@@ -40,7 +40,7 @@ placeholders = {
 }
 
 [node name="exit" parent="." instance=ExtResource( 3 )]
-position = Vector2( 161.498, 1042.39 )
+position = Vector2( 123.326, 1071.75 )
 placeholders = {
 
 }

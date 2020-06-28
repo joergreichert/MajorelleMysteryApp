@@ -30,6 +30,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="dining-room-ghost" parent="background" instance=ExtResource( 5 )]
+position = Vector2( 619.106, 435.947 )
+scale = Vector2( 1.4019, 1.37025 )
+placeholders = {
+
+}
+
 [node name="arturo" parent="." instance=ExtResource( 6 )]
 position = Vector2( 208.062, 880.304 )
 scale = Vector2( 0.6, 0.6 )
@@ -50,13 +57,7 @@ placeholders = {
 
 [node name="right-nav" parent="." instance=ExtResource( 1 )]
 position = Vector2( -35.875, 210.466 )
-placeholders = {
-
-}
-
-[node name="dining-room-ghost" parent="." instance=ExtResource( 5 )]
-position = Vector2( 978.188, 688.797 )
-scale = Vector2( 2.215, 2.165 )
+z_as_relative = false
 placeholders = {
 
 }

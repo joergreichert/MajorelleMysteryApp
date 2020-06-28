@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/rabbits/sprites/letter.png" type="Texture" id=1]
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 [ext_resource path="res://scenes/rabbits/sprites/rabbit-poem.png" type="Texture" id=3]
+[ext_resource path="res://scenes/rabbits/sprites/letter-paper.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "pick_up"
@@ -33,19 +33,21 @@ __meta__ = {
 anims/pick_up = SubResource( 1 )
 
 [node name="_focus_out" type="Sprite" parent="."]
-position = Vector2( 36.0792, 8.38906 )
-scale = Vector2( 0.18, 0.25 )
-texture = ExtResource( 1 )
+position = Vector2( 36.0792, -92.7858 )
+scale = Vector2( 0.18, 0.152529 )
+texture = ExtResource( 4 )
 
 [node name="text" type="Sprite" parent="_focus_out"]
-scale = Vector2( 0.836, 0.7 )
+position = Vector2( 10.5555, 42.1397 )
+scale = Vector2( 1.33657, 2.83721 )
 texture = ExtResource( 3 )
 
 [node name="_focus_in" type="Sprite" parent="."]
-position = Vector2( 36.079, 8.389 )
-scale = Vector2( 0.18, 0.25 )
-texture = ExtResource( 1 )
+position = Vector2( 36.0792, -92.7858 )
+scale = Vector2( 0.18, 0.152529 )
+texture = ExtResource( 4 )
 
 [node name="text" type="Sprite" parent="_focus_in"]
-scale = Vector2( 0.836, 0.7 )
+position = Vector2( 10.5555, 42.1397 )
+scale = Vector2( 1.33657, 2.83721 )
 texture = ExtResource( 3 )

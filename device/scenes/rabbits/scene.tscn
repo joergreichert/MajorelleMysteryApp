@@ -34,8 +34,8 @@ __meta__ = {
 [node name="game" parent="." instance=ExtResource( 8 )]
 
 [node name="rabbit-poem" parent="." instance=ExtResource( 1 )]
-position = Vector2( 537.957, 389.555 )
-scale = Vector2( 6.6, 4.5 )
+position = Vector2( 651.863, 854.248 )
+scale = Vector2( 5, 3.5 )
 placeholders = {
 
 }
