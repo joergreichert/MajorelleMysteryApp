@@ -1,4 +1,4 @@
 :load
 cut_scene telon fade_out
-change_scene res://scenes/buffet/scene.tscn
+change_scene res://scenes/dining-room-left/scene.tscn
 cut_scene telon fade_in

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/dining-room-left/right-nav.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/dining-room-left/sprites/table.png" type="Texture" id=2]
 [ext_resource path="res://globals/background.gd" type="Script" id=3]
 [ext_resource path="res://scenes/dining-room-left/buffet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/dining-room-left/dining-room-ghost.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 
@@ -40,15 +41,22 @@ use_custom_z = true
 
 [node name="game" parent="." instance=ExtResource( 8 )]
 
+[node name="buffet" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1145.6, 461.59 )
+scale = Vector2( 2, 3 )
+placeholders = {
+
+}
+
 [node name="right-nav" parent="." instance=ExtResource( 1 )]
 position = Vector2( -35.875, 210.466 )
 placeholders = {
 
 }
 
-[node name="buffet" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1145.6, 461.59 )
-scale = Vector2( 2, 3 )
+[node name="dining-room-ghost" parent="." instance=ExtResource( 5 )]
+position = Vector2( 978.188, 688.797 )
+scale = Vector2( 2.215, 2.165 )
 placeholders = {
 
 }

@@ -32,7 +32,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 resource_name = "look_down_right"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -59,7 +59,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 resource_name = "look_up_right"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -86,7 +86,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 resource_name = "talk"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -113,7 +113,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 2 ) ],
 "loop": false,
@@ -144,10 +144,10 @@ __meta__ = {
 [node name="animation" type="AnimationPlayer" parent="."]
 autoplay = "default"
 anims/default = SubResource( 1 )
-anims/look_down_right = SubResource( 4 )
-anims/look_up_right = SubResource( 5 )
-anims/talk = SubResource( 6 )
+anims/look_down_right = SubResource( 2 )
+anims/look_up_right = SubResource( 3 )
+anims/talk = SubResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.6, 0.6 )
-frames = SubResource( 3 )
+frames = SubResource( 5 )
