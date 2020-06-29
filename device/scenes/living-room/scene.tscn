@@ -1,9 +1,8 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://scenes/living-room/chameleon.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/living-room/player.tscn" type="PackedScene" id=7]
-[ext_resource path="res://globals/item.gd" type="Script" id=8]
 [ext_resource path="res://globals/background.gd" type="Script" id=10]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=11]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=14]
@@ -68,7 +67,6 @@ navpoly = SubResource( 3 )
 
 [node name="NavigationPolygonInstance2" type="NavigationPolygonInstance" parent="terrain"]
 navpoly = SubResource( 4 )
-
 
 [node name="player" parent="." instance=ExtResource( 7 )]
 position = Vector2( 36.7695, 919.239 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/country-mouse/sprites/letter-paper.png" type="Texture" id=1]
 [ext_resource path="res://scenes/country-mouse/sprites/M0513_996-7-1-e_JYL.jpg" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/letter/letter-e.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/letter/letter-s.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/letter/letter-o.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/country-mouse/anagram.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/letter/letter-a.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/country-mouse/sprites/country-mouse-poem.png" type="Texture" id=11]
 
@@ -77,6 +78,15 @@ placeholders = {
 [node name="letter_s" parent="." instance=ExtResource( 7 )]
 position = Vector2( 603.305, 306.827 )
 scale = Vector2( 0.2, 0.2 )
+placeholders = {
+
+}
+
+[node name="anagram" parent="." instance=ExtResource( 9 )]
+position = Vector2( 786.999, 584.405 )
+scale = Vector2( 0.6, 0.3 )
+tooltip = "Anagram country mouse"
+global_id = "anagram_country_mouse"
 placeholders = {
 
 }
