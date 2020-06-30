@@ -1,0 +1,6 @@
+:load
+cut_scene telon fade_out
+change_scene res://scenes/country-mouse/scene.tscn
+cut_scene telon fade_in
+
+:pick_up

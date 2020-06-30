@@ -1,0 +1,14 @@
+:use inv_letter_a
+set_active letter_a true
+
+:use inv_letter_e
+set_active letter_e_1 true
+
+:use inv_letter_s
+set_active letter_s_1 true
+
+:use inv_letter_o
+set_active letter_o_1 true
+
+:use inv_letter_p
+set_active letter_p_1 true
