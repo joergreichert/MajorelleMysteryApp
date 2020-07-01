@@ -1,12 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/dining-room-left/right-nav.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/dining-room-left/sprites/table.png" type="Texture" id=2]
+[ext_resource path="res://scenes/dining-room-right/left-nav.tscn" type="PackedScene" id=2]
 [ext_resource path="res://globals/background.gd" type="Script" id=3]
-[ext_resource path="res://scenes/dining-room-left/buffet.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/dining-room-left/dining-room-ghost.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/dining-room-right/sprites/Raum_Ansicht2.png" type="Texture" id=4]
 [ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/dining-room-left/left-nav.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 
 [sub_resource type="GDScript" id=1]
@@ -24,25 +22,18 @@ __meta__ = {
 margin_right = 1027.0
 margin_bottom = 800.0
 rect_scale = Vector2( 1.58, 1.58 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 expand = true
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="dining-room-ghost" parent="background" instance=ExtResource( 5 )]
-position = Vector2( 619.106, 435.947 )
-scale = Vector2( 1.4019, 1.37025 )
-placeholders = {
-
-}
-
 [node name="arturo" parent="." instance=ExtResource( 6 )]
 position = Vector2( 208.062, 880.304 )
 scale = Vector2( 0.6, 0.6 )
 tooltip = "The journalist"
-events_path = "res://scenes/dining-room-left/arturo.esc"
+events_path = "res://scenes/dining-room-right/arturo.esc"
 placeholders = {
 
 }
@@ -50,25 +41,19 @@ use_custom_z = true
 
 [node name="game" parent="." instance=ExtResource( 8 )]
 
-[node name="buffet" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1145.6, 461.59 )
-scale = Vector2( 2, 3 )
-placeholders = {
-
-}
-
 [node name="right-nav" parent="." instance=ExtResource( 1 )]
 position = Vector2( -35.875, 210.466 )
 z_as_relative = false
-global_id = "right-nav-dining-left"
+events_path = "res://scenes/dining-room-right/right-nav.esc"
+global_id = "right-nav-dining-right"
 placeholders = {
 
 }
 
-[node name="left-nav" parent="." instance=ExtResource( 7 )]
-position = Vector2( 59.7914, 263.082 )
-events_path = "res://scenes/dining-room-left/left-nav.esc"
-global_id = "left-nav-dining-left"
+[node name="left-nav" parent="." instance=ExtResource( 2 )]
+position = Vector2( 34.536, 268.466 )
+events_path = "res://scenes/dining-room-right/left-nav.esc"
+global_id = "left-nav-dining-right"
 placeholders = {
 
 }

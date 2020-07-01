@@ -2,7 +2,7 @@
 
 [ext_resource path="res://globals/sprites/arrow.png" type="Texture" id=1]
 [ext_resource path="res://globals/sprites/arrow-pressed.png" type="Texture" id=2]
-[ext_resource path="res://scenes/slide-show/sprites/RDC-B0009119-2019-SL.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/slide-show/sprites/RDC-B0009119-2019-SL.png" type="Texture" id=3]
 [ext_resource path="res://scenes/slide-show/painting.tscn" type="PackedScene" id=4]
 [ext_resource path="res://globals/sprites/arrow-left-pressed.png" type="Texture" id=5]
 [ext_resource path="res://globals/sprites/arrow-left.png" type="Texture" id=6]
@@ -14,14 +14,14 @@ script/source = "extends \"res://globals/scene_base.gd\"
 
 var vm;
 var paintings = [
-	\"RDC-B0009119-2019-SL.jpg\",
-	\"RDC-B0009116-2019-SL.jpg\",
-	\"RDC-B0009130-2019-SL.jpg\",
-	\"RDC-B0009103-2019-SL.jpg\",
-	\"RDC-B0009104-2019-SL.jpg\",
-	\"RDC-B0009128-2019-SL.jpg\",
-	\"RDC-B0009109-2019-SL.jpg\",
-	\"RDC-B0009127-2019-SL.jpg\"
+	\"RDC-B0009119-2019-SL.png\",
+	\"RDC-B0009116-2019-SL.png\",
+	\"RDC-B0009130-2019-SL.png\",
+	\"RDC-B0009103-2019-SL.png\",
+	\"RDC-B0009104-2019-SL.png\",
+	\"RDC-B0009128-2019-SL.png\",
+	\"RDC-B0009109-2019-SL.png\",
+	\"RDC-B0009127-2019-SL.png\"
 ]
 var currentIndex = 0
 
