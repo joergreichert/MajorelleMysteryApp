@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/dining-room/left-nav.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/dining-room/top-right-pic.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/dining-room/sprites/cheminee_sole.png" type="Texture" id=7]
+[ext_resource path="res://scenes/dining-room/chimney.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/dining-room/right-nav.tscn" type="PackedScene" id=9]
 
@@ -65,14 +65,17 @@ placeholders = {
 
 }
 
-[node name="chimney" type="Sprite" parent="."]
-position = Vector2( 809.365, 665.725 )
-scale = Vector2( 1.055, 1.055 )
-texture = ExtResource( 7 )
-
 [node name="right-nav" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1431.07, 339.615 )
 tooltip = "Navigate to right part of dining room"
+placeholders = {
+
+}
+
+[node name="chimney" parent="." instance=ExtResource( 7 )]
+position = Vector2( 742.514, 613.006 )
+scale = Vector2( 1.055, 1.055 )
+tooltip = "Chimney"
 placeholders = {
 
 }
