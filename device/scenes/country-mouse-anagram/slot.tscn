@@ -3,11 +3,11 @@
 [ext_resource path="res://scenes/dining-room/sprites/click_mask/right-top-look-mask.png" type="Texture" id=1]
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 
-[node name="anagran" type="Node2D"]
+[node name="anagram-slot" type="Node2D"]
 script = ExtResource( 2 )
-tooltip = "Country mouse anagram"
-events_path = "res://scenes/country-mouse-anagram/slot02.esc"
-global_id = "country-mouse-anagram-slot02"
+tooltip = "Country mouse anagram slot"
+events_path = "res://scenes/country-mouse/anagram.esc"
+global_id = "country-mouse-anagram-slot"
 interact_angle = 90
 placeholders = {
 
@@ -16,8 +16,8 @@ placeholders = {
 [node name="area" type="TextureButton" parent="."]
 margin_left = -43.0
 margin_top = -42.0
-margin_right = 115.0
-margin_bottom = 112.0
+margin_right = 183.0
+margin_bottom = 146.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
