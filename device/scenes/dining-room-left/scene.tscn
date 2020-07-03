@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/dining-room-left/right-nav.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/dining-room-left/sprites/table.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/dining-room/arturo.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/dining-room-left/left-nav.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/dining-room/menu_card.tscn" type="PackedScene" id=9]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -47,6 +48,13 @@ placeholders = {
 
 }
 use_custom_z = true
+
+[node name="menu_card" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( -258.299, 239.166 )
+placeholders = {
+
+}
 
 [node name="game" parent="." instance=ExtResource( 8 )]
 

@@ -1,4 +1,6 @@
 :load
 cut_scene telon fade_out
+set_global dining-room-left-active false
+set_global dining-room-active true
 change_scene res://scenes/dining-room/scene.tscn
 cut_scene telon fade_in

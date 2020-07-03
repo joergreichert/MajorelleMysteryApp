@@ -21,5 +21,5 @@ set_global picked_item true
 set_global i/inv_letter_p true
 set_active letter_p false
 
-change_scene res://scenes/country-mouse-anagram/scene.tscn
+change_scene res://scenes/intro-game/scene.tscn
 cut_scene telon fade_in

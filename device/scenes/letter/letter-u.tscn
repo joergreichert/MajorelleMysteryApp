@@ -9,7 +9,7 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 tooltip = "Letter U"
-events_path = "res://scenes/letter/letter-u2.esc"
+events_path = "res://scenes/letter/letter-u.esc"
 global_id = "letter_u"
 interact_angle = 90
 placeholders = {
