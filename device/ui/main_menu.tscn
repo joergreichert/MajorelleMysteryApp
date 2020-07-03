@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
-[ext_resource path="res://ui/villa.png" type="Texture" id=2]
+[ext_resource path="res://ui/background.jpg" type="Texture" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
+[ext_resource path="res://ui/villa-entry.tscn" type="PackedScene" id=4]
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://globals/sprites/igge-button.png" type="Texture" id=6]
 
@@ -24,12 +25,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 787, 598 )
-scale = Vector2( 2.5, 2.5 )
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 796.798, 591.619 )
+scale = Vector2( 3.04007, 2.91753 )
 texture = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
+
+[node name="villa-entry" parent="." instance=ExtResource( 4 )]
+position = Vector2( 920.039, 589.706 )
+scale = Vector2( 2.5, 2.5 )
+placeholders = {
+
 }
 
 [node name="new_game" type="TextureButton" parent="."]
@@ -154,10 +159,10 @@ __meta__ = {
 }
 
 [node name="en" type="TextureButton" parent="."]
-margin_left = 1374.63
-margin_top = 969.428
-margin_right = 1886.63
-margin_bottom = 1481.43
+margin_left = 1449.63
+margin_top = 971.428
+margin_right = 1961.63
+margin_bottom = 1483.43
 rect_scale = Vector2( 0.13, 0.13 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -186,10 +191,10 @@ __meta__ = {
 }
 
 [node name="fr" type="TextureButton" parent="."]
-margin_left = 1376.05
-margin_top = 1024.65
-margin_right = 1888.05
-margin_bottom = 1536.65
+margin_left = 1451.05
+margin_top = 1026.65
+margin_right = 1963.05
+margin_bottom = 1538.65
 rect_scale = Vector2( 0.13, 0.13 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -217,10 +222,10 @@ __meta__ = {
 }
 
 [node name="de" type="TextureButton" parent="."]
-margin_left = 1375.01
-margin_top = 1080.19
-margin_right = 1887.01
-margin_bottom = 1592.19
+margin_left = 1450.01
+margin_top = 1082.19
+margin_right = 1962.01
+margin_bottom = 1594.19
 rect_scale = Vector2( 0.13, 0.13 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
