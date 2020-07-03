@@ -38,9 +38,11 @@ texture = SubResource( 2 )
 [node name="villa-entry" parent="." instance=ExtResource( 4 )]
 position = Vector2( 920.039, 589.706 )
 scale = Vector2( 2.5, 2.5 )
+z_as_relative = false
 placeholders = {
 
 }
+use_custom_z = true
 
 [node name="new_game" type="TextureButton" parent="."]
 margin_left = 19.9724
