@@ -12,6 +12,7 @@ set_active letter_l false
  cut_scene telon fade_in
  > [luis_intro_talked,jacques_intro_talked,jane_intro_talked]
   cut_scene telon fade_out
+  set_global dining-room-active true
   change_scene res://scenes/dining-room/scene.tscn
   cut_scene telon fade_in
   say arturo dining_room_01:"Dining Room 01" default avatar_arturo
