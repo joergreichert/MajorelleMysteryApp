@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/dining-room/menu_card.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/dining-room/sprites/cheminee.jpg" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scenes/dining-room/chimney.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/dining-room/right-nav.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/dining-room/stained-glass.tscn" type="PackedScene" id=10]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -76,6 +77,13 @@ placeholders = {
 position = Vector2( 742.514, 613.006 )
 scale = Vector2( 1.055, 1.055 )
 tooltip = "Chimney"
+placeholders = {
+
+}
+
+[node name="stained-glass-closeup" parent="." instance=ExtResource( 10 )]
+position = Vector2( 489.973, 371.257 )
+scale = Vector2( 0.6, 0.6 )
 placeholders = {
 
 }

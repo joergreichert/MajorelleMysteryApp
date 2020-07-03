@@ -1,5 +1,14 @@
 :load
 cut_scene telon fade_out
-set_global dining-room-active true
 change_scene res://scenes/dining-room/scene.tscn
+teleport_pos arturo 500 730
+set_state arturo backside
 cut_scene telon fade_in
+
+:talk
+
+:use
+
+:look
+
+:pick_up

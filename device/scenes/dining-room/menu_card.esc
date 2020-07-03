@@ -1,7 +1,7 @@
 :pick_up
 queue_resource res://scenes/living-room/scene.tscn
 > [dining-room-active]
- teleport_pos arturo 1200 700
+ teleport_pos arturo 1200 750
  set_state arturo look_down_right
 
 say menu_card menu_card_pick_up_1:"I will take this menu to take a closer look." default avatar_arturo
