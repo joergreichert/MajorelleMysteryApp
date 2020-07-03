@@ -9,3 +9,11 @@ cut_scene telon fade_out
 > [slide-show-active]
  change_scene res://scenes/slide-show/scene.tscn
 cut_scene telon fade_in
+
+:talk
+
+:use
+
+:look
+
+:pick_up

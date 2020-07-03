@@ -11,3 +11,11 @@ cut_scene telon fade_out
  change_scene res://scenes/dining-room-right/scene.tscn
  set_state arturo default
 cut_scene telon fade_in
+
+:talk
+
+:use
+
+:look
+
+:pick_up
