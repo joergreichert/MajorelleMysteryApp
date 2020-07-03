@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/dining-room/sprites/cheminee_sole.png" type="Texture" id=1]
 [ext_resource path="res://scenes/chimney/sprites/letter-paper.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/letter/letter-u2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/letter/letter-n.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/letter/letter-o2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/dining-room/sprites/cheminee_background.jpg" type="Texture" id=9]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -17,8 +18,9 @@ script/source = "extends \"res://globals/scene_base.gd\"
 script = SubResource( 1 )
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 779.276, 754.417 )
-scale = Vector2( 0.27603, 0.489044 )
+position = Vector2( 812.732, 622.75 )
+scale = Vector2( 0.999517, 1.04689 )
+texture = ExtResource( 9 )
 
 [node name="game" parent="." instance=ExtResource( 3 )]
 

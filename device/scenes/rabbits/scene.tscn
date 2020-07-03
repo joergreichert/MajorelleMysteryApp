@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/rabbits/rabbit-poem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/rabbits/exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/slide-show/sprites/RDC-B0009104-2019-SL.png" type="Texture" id=3]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
 
 [sub_resource type="GDScript" id=1]
@@ -26,6 +27,7 @@ __meta__ = {
 margin_right = 1027.0
 margin_bottom = 800.0
 rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 3 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
@@ -34,7 +36,7 @@ __meta__ = {
 [node name="game" parent="." instance=ExtResource( 8 )]
 
 [node name="rabbit-poem" parent="." instance=ExtResource( 1 )]
-position = Vector2( 651.863, 854.248 )
+position = Vector2( 626.863, 966.248 )
 scale = Vector2( 5, 3.5 )
 placeholders = {
 

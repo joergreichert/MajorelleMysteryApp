@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/country-mouse/sprites/letter-paper.png" type="Texture" id=1]
 [ext_resource path="res://scenes/country-mouse/sprites/M0513_996-7-1-e_JYL.jpg" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/country-mouse/anagram.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/letter/letter-a.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/country-mouse/sprites/country-mouse-poem.png" type="Texture" id=11]
+[ext_resource path="res://scenes/dining-room-left/sprites/table_background.png" type="Texture" id=12]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -20,8 +21,9 @@ script/source = "extends \"res://globals/scene_base.gd\"
 script = SubResource( 1 )
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 779.276, 754.417 )
-scale = Vector2( 0.27603, 0.489044 )
+position = Vector2( 814.34, 637.536 )
+scale = Vector2( 1.02187, 1.07444 )
+texture = ExtResource( 12 )
 
 [node name="game" parent="." instance=ExtResource( 3 )]
 
