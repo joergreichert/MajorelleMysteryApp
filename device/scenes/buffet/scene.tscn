@@ -46,3 +46,5 @@ position = Vector2( 123.326, 1071.75 )
 placeholders = {
 
 }
+
+[node name="Sprite" type="Sprite" parent="."]
