@@ -1,4 +1,11 @@
 :load
 cut_scene telon fade_out
-change_scene res://scenes/slide-show/scene.tscn
+> [dining-room-active]
+ change_scene res://scenes/dining-room/scene.tscn
+> [dining-room-left-active]
+ change_scene res://scenes/dining-room-left/scene.tscn
+> [dining-room-right-active]
+ change_scene res://scenes/dining-room-right/scene.tscn
+> [slide-show-active]
+ change_scene res://scenes/slide-show/scene.tscn
 cut_scene telon fade_in

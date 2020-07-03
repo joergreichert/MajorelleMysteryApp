@@ -35,9 +35,33 @@ __meta__ = {
 [node name="dining-room-ghost" parent="background" instance=ExtResource( 5 )]
 position = Vector2( 619.106, 435.947 )
 scale = Vector2( 1.4019, 1.37025 )
+z_as_relative = false
 placeholders = {
 
 }
+use_custom_z = true
+
+[node name="left-nav" parent="background/dining-room-ghost" instance=ExtResource( 7 )]
+position = Vector2( -414.625, -196.635 )
+scale = Vector2( 0.451467, 0.461895 )
+z_index = 1
+z_as_relative = false
+events_path = "res://scenes/dining-room-left/left-nav.esc"
+global_id = "left-nav-dining-left"
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="right-nav" parent="background/dining-room-ghost/left-nav" instance=ExtResource( 1 )]
+position = Vector2( -95.6664, -52.616 )
+z_index = 2
+z_as_relative = false
+global_id = "right-nav-dining-left"
+placeholders = {
+
+}
+use_custom_z = true
 
 [node name="arturo" parent="." instance=ExtResource( 6 )]
 position = Vector2( 208.062, 880.304 )
@@ -61,22 +85,6 @@ placeholders = {
 [node name="buffet" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1145.6, 461.59 )
 scale = Vector2( 2, 3 )
-placeholders = {
-
-}
-
-[node name="right-nav" parent="." instance=ExtResource( 1 )]
-position = Vector2( -35.875, 210.466 )
-z_as_relative = false
-global_id = "right-nav-dining-left"
-placeholders = {
-
-}
-
-[node name="left-nav" parent="." instance=ExtResource( 7 )]
-position = Vector2( 59.7914, 263.082 )
-events_path = "res://scenes/dining-room-left/left-nav.esc"
-global_id = "left-nav-dining-left"
 placeholders = {
 
 }

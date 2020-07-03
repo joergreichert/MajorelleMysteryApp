@@ -1,11 +1,16 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
-[ext_resource path="res://ui/background.jpg" type="Texture" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
 [ext_resource path="res://ui/villa-entry.tscn" type="PackedScene" id=4]
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://globals/sprites/igge-button.png" type="Texture" id=6]
+
+[sub_resource type="Gradient" id=3]
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -26,9 +31,9 @@ __meta__ = {
 }
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 796.798, 591.619 )
-scale = Vector2( 3.04007, 2.91753 )
-texture = ExtResource( 2 )
+position = Vector2( 796.798, 635.558 )
+scale = Vector2( 3.04007, 1281.15 )
+texture = SubResource( 4 )
 
 [node name="villa-entry" parent="." instance=ExtResource( 4 )]
 position = Vector2( 920.039, 589.706 )

@@ -1,25 +1,4 @@
 :load
 cut_scene telon fade_out
-
-set_global picked_item true
-set_global i/inv_letter_a true
-set_active letter_a false
-
-set_global picked_item true
-set_global i/inv_letter_e true
-set_active letter_e false
-
-set_global picked_item true
-set_global i/inv_letter_s true
-set_active letter_s false
-
-set_global picked_item true
-set_global i/inv_letter_o true
-set_active letter_o false
-
-set_global picked_item true
-set_global i/inv_letter_p true
-set_active letter_p false
-
-change_scene res://scenes/intro-game/scene.tscn
+change_scene res://scenes/dining-room-left/scene.tscn
 cut_scene telon fade_in

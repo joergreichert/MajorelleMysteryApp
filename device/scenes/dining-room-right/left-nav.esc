@@ -2,5 +2,6 @@
 cut_scene telon fade_out
 set_global dining-room-right-active false
 set_global dining-room-active true
+set_state arturo default
 change_scene res://scenes/dining-room/scene.tscn
 cut_scene telon fade_in

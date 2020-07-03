@@ -6,7 +6,6 @@ queue_resource res://scenes/living-room/scene.tscn
 
 say menu_card menu_card_pick_up_1:"I will take this menu to take a closer look." default avatar_arturo
 
-anim menu_card pick_up
 set_global picked_item true
 set_global i/inv_menu_card true
 set_active menu_card false

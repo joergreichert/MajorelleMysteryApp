@@ -1,6 +1,13 @@
 :load
 cut_scene telon fade_out
-change_scene res://scenes/dining-room/scene.tscn
-teleport_pos arturo 1200 700
-set_state arturo gitlook_down_right
+> [dining-room-active]
+ change_scene res://scenes/dining-room/scene.tscn
+ teleport_pos arturo 1200 700
+ set_state arturo look_down_right
+> [dining-room-left-active]
+ change_scene res://scenes/dining-room-left/scene.tscn
+ set_state arturo default
+> [dining-room-right-active]
+ change_scene res://scenes/dining-room-right/scene.tscn
+ set_state arturo default
 cut_scene telon fade_in
