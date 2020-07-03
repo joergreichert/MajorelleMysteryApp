@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ui/confirm_popup.gd" type="Script" id=1]
-[ext_resource path="res://globals/sprites/quitdialog.png" type="Texture" id=2]
+[ext_resource path="res://globals/sprites/speechbubble.png" type="Texture" id=2]
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://globals/sprites/yes-no-button.png" type="Texture" id=4]
-[ext_resource path="res://globals/sprites/yes-no-button-pressed.png" type="Texture" id=5]
+[ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -34,24 +33,24 @@ __meta__ = {
 }
 
 [node name="Panel" type="TextureButton" parent="."]
-margin_left = 523.0
-margin_top = 368.0
-margin_right = 2912.0
-margin_bottom = 1857.0
-rect_scale = Vector2( 0.24, 0.24 )
+margin_left = 411.963
+margin_top = 32.9408
+margin_right = 3919.96
+margin_bottom = 2512.94
+rect_scale = Vector2( 0.24, 0.36 )
 texture_normal = ExtResource( 2 )
 
 [node name="message" type="Label" parent="."]
-margin_left = 523.0
+margin_left = 549.0
 margin_top = 368.0
-margin_right = 955.0
+margin_right = 981.0
 margin_bottom = 543.0
 rect_scale = Vector2( 1.3, 1.3 )
 hint_tooltip = "Sure ?"
 mouse_filter = 1
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.807843, 0.156863, 0.219608, 1 )
+custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "Do you want 
 to quit the game ?"
@@ -60,26 +59,29 @@ valign = 1
 autowrap = true
 
 [node name="yes" type="TextureButton" parent="."]
-margin_left = 611.0
-margin_top = 605.0
-margin_right = 1309.0
-margin_bottom = 916.0
-rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
+margin_left = 581.78
+margin_top = 462.795
+margin_right = 1279.78
+margin_bottom = 974.795
+rect_scale = Vector2( 0.45, 0.7 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="UI_YES" type="Label" parent="yes"]
-margin_left = 18.0
-margin_top = 91.0
-margin_right = 291.0
-margin_bottom = 181.0
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -87.7788
+margin_top = 217.455
+margin_right = 185.221
+margin_bottom = 307.455
+rect_scale = Vector2( 2.5, 2 )
 hint_tooltip = "Yes"
 mouse_filter = 1
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.988235, 0.913725, 0.309804, 1 )
+custom_colors/font_color = Color( 0.223529, 0.223529, 0.309804, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_YES"
 align = 1
@@ -89,26 +91,26 @@ __meta__ = {
 }
 
 [node name="no" type="TextureButton" parent="."]
-margin_left = 842.0
-margin_top = 605.0
-margin_right = 1540.0
-margin_bottom = 916.0
-rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
+margin_left = 842.364
+margin_top = 461.847
+margin_right = 1540.36
+margin_bottom = 973.847
+rect_scale = Vector2( 0.45, 0.7 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
 
 [node name="UI_NO" type="Label" parent="no"]
-margin_left = 3.0
-margin_top = 81.0
-margin_right = 277.0
-margin_bottom = 171.0
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -92.4681
+margin_top = 217.435
+margin_right = 181.532
+margin_bottom = 307.435
+rect_scale = Vector2( 2.5, 2 )
 hint_tooltip = "No"
 mouse_filter = 1
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 0.988235, 0.913725, 0.309804, 1 )
+custom_colors/font_color = Color( 0.223529, 0.223529, 0.309804, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_NO"
 align = 1
