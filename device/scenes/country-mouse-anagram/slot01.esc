@@ -4,7 +4,7 @@ set_global i/inv_letter_a false
 set_active letter_a_1 true
 set_global letter_a_1 true
 > [letter_a_1,letter_e_2,letter_s_3,letter_o_4,letter_p_5]
- say arturo "Hurray, solved the riddle. AESOP is the name of the poet who wrote The Town mouse and the Country." default avatar_arturo
+ say arturo Mouse_anagram:"Hurray, solved the riddle. AESOP is the name of the poet who wrote The Town mouse and the Country Mouse." default avatar_arturo
 
 :use inv_letter_e
 set_global picked_item false
